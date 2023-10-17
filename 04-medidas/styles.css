@@ -1,0 +1,21 @@
+html {
+    font-size: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.caja {
+    width: 250px;
+    height: 250px;
+    background-color: aquamarine;
+    border: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1r em;
+}
+
+.caja p {
+    font-size: 2rem;
+}

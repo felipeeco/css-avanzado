@@ -1,0 +1,17 @@
+:root {
+    --mi-variable: yellow;
+    --fuente: Arial, Verdana;
+}
+
+h1 {
+    color: var(--mi-variable);
+    font-family: var(--fuente);
+}
+
+p {
+    font-family: var(--fuente);
+}
+
+a {
+    color: var(--mi-variable);
+}

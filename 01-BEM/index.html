@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>BEM - CSS</title>
+</head>
+<body>
+    <h1>BEM metodology</h1>
+
+    <!-- CODIGO QUE NO USA BEM <section class="cards">
+        <div class="card">
+            <h3>Tarjeta 1</h3>
+            <p>Contenido tarjeta 1</p>
+            <a href="#">victorroblesweb.es</a>
+        </div>
+        <div class="card">
+            <h3>Tarjeta 2</h3>
+            <p>Contenido tarjeta 2</p>
+            <a href="#">victorroblesweb.es</a>
+        </div>
+        <div class="card">
+            <h3>Tarjeta 3</h3>
+            <p>Contenido tarjeta 3</p>
+            <a href="#">victorroblesweb.es</a>
+        </div>
+        <div class="card">
+            <h3>Tarjeta 4</h3>
+            <p>Contenido tarjeta 4</p>
+            <a href="#">victorroblesweb.es</a>
+        </div>
+    </section> -->
+
+    <!-- Código que usa BEM
+    ///////////////////////////////////////////
+    -->
+
+    <section class="cards">
+        <article class="cards___card">
+            <h3 class="card__title">Tarjeta 1</h3>
+            <p class="card__content">
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+                <span class="card__readmore"></span>
+            </p>    
+            <a href="#" class="card__link card__link--red">google.es</a>                    
+        </article>
+        <article class="cards___card">
+            <h3 class="card__title">Tarjeta 1</h3>
+            <p class="card__content">
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+                <span class="card__readmore"></span>
+            </p>    
+            <a href="#" class="card__link">google.es</a>                    
+        </article>
+        <article class="cards___card">
+            <h3 class="card__title">Tarjeta 1</h3>
+            <p class="card__content">
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+                <span class="card__readmore"></span>
+            </p>    
+            <a href="#" class="card__link card__link--red">google.es</a>                    
+        </article>
+        <article class="cards___card">
+            <h3 class="card__title">Tarjeta 1</h3>
+            <p class="card__content">
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+                <span class="card__readmore"></span>
+            </p>    
+            <a href="#" class="card__link">google.es</a>                    
+        </article>
+    </section>    
+
+</body>
+</html>
