@@ -241,6 +241,10 @@ body {
     cursor: pointer;
 }
 
+.menu__icon--active {
+    color: var(--secondary-color); 
+}
+
 .menu__overlay {
     position: absolute;
     right: 0;
@@ -261,7 +265,8 @@ body {
 
 
 /* ABOUT */
-.content__about {
+.content__about,
+.content__experience {
     display: block;
     height: 100%;
     min-height: 100%;
@@ -270,3 +275,92 @@ body {
     padding-right: 3rem;
 }
 
+/* About me */
+.about__header,
+.experience__header {
+    display: inline-block;
+    margin-bottom: 4.5rem;
+}
+
+.about__title,
+.experience__title {
+    font-size: 3.2rem;
+    position: relative;
+}
+
+.about__title::after,
+.experience__title::after {
+    background-image: -webkit-repeating-radial-gradient(center center, var(--secondary-color), var(--secondary-color) 1px, transparent 0px, transparent 100px);
+    background-size: 6px 6px;
+    content: "";
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: -25px;
+    width: 50px;
+}
+
+.title__color {
+    color: var(--secondary-color);
+}
+
+/* personal information */
+.about__personal-info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.personal-info__bio {
+    flex-basis: 55%;
+}
+
+.personal-info__data {
+    flex-basis: 45%;
+    padding: 0 1.5rem;
+}
+
+.personal-info__description {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+}
+
+.personal-info__option {
+    margin-bottom: 1rem;
+}
+
+.personal-info__title {
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+/* services */
+.services__header {
+    display: inline-block;
+    padding-right: 1.2rem;
+    position: relative;
+}
+
+.services__title {
+    font-size: 2.1rem;
+}
+
+.services__title::after {
+    background-image: -webkit-repeating-radial-gradient(center center, var(--secondary-color), var(--secondary-color) 1px, transparent 0px, transparent 100px);
+    background-size: 6px 6px;
+    content: "";
+    height: 20px;
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    width: 30px;
+}
+
+.icon__solid {
+    color: var(--secondary-color);
+    font-size: 2rem;
+}
+
+/* laboral experience */
