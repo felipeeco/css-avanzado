@@ -269,7 +269,8 @@ body {
 
 /* ABOUT */
 .content__about,
-.content__experience {
+.content__experience,
+.content__portfolio {
     display: block;
     height: 100%;
     min-height: 100%;
@@ -280,19 +281,22 @@ body {
 
 /* About me */
 .about__header,
-.experience__header {
+.experience__header,
+.portfolio__header {
     display: inline-block;
     margin-bottom: 4.5rem;
 }
 
 .about__title,
-.experience__title {
+.experience__title,
+.portfolio__title {
     font-size: 3.2rem;
     position: relative;
 }
 
 .about__title::after,
-.experience__title::after {
+.experience__title::after,
+.portfolio__title::after {
     background-image: -webkit-repeating-radial-gradient(center center, var(--secondary-color), var(--secondary-color) 1px, transparent 0px, transparent 100px);
     background-size: 6px 6px;
     content: "";
@@ -514,4 +518,54 @@ body {
 .certificate__date {
     font-size: 1rem;
     color: var(--title-color);
+}
+
+/** portfolio **/
+.portfolio__gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.gallery__item {
+    position: relative;
+    flex-basis: 33%;
+    padding: 0.7rem;
+}
+
+.gallery__container-image {
+    overflow: hidden;
+}
+
+.gallery__image {
+    transition: all 300ms ease-in-out;
+}
+
+.gallery__item:hover .gallery__image {
+    transform: scale(1.1);
+}
+
+.gallery__title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1.5rem 0;
+}
+
+.gallery__icon {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 1.6rem;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    transition: all 450ms ease-in-out;
+    opacity: 0;
+}
+
+.gallery__item:hover .gallery__icon{
+    opacity: 1;
 }
