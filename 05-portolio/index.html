@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- CSS-->
-    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximun-scale=1">
 
     <!-- FONTS -->
     <link rel="stylesheet" type="text/css" href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/fonts/poppins/poppins.css">
 
-    <title>Portafolio</title>
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/scroll.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
+
+    <title>About</title>
 </head>
 <body>
     <!-- Main Layout -->
@@ -31,30 +33,18 @@
                     <h2 class="user-info__name">
                         Felipe Moreno
                     </h2>
-                    <h4 class="user-info__job">
+                    <h1 class="user-info__job">
                         Frontend Developer
-                    </h4>
+                    </h1>
                 </div>
 
                 <!-- Nav -->
                 <nav class="layout__menu">
                     <ul class="menu__list">
                         <li class="menu__option">
-                            <a href="index.html" class="menu__link">
+                            <a href="index.html" class="menu__link menu__icon--active">
                                 <i class="fa-solid fa-house menu__icon"></i>
                                 <span class="menu__overlay">Home</span>
-                            </a>
-                        </li>
-                        <li class="menu__option">
-                            <a href="about.html" class="menu__link">
-                                <i class="fa-solid fa-user menu__icon"></i>
-                                <span class="menu__overlay">About</span>
-                            </a>
-                        </li>
-                        <li class="menu__option">
-                            <a href="studies.html" class="menu__link">
-                                <i class="fa-solid fa-graduation-cap menu__icon"></i>
-                                <span class="menu__overlay">Estudios</span>
                             </a>
                         </li>
                         <li class="menu__option">
@@ -83,20 +73,144 @@
                 </div>
 
                 <!-- Buton -->
-                <div class="user-info__buttons">
+                <!-- <div class="user-info__buttons">
                     <a href="#" class="user-info__btn">
                         Descargar CV
                     </a>
-                </div>
+                </div> -->
             </section>
         </aside>
         
         <!-- Main Content -->
         <main class="layout__content">
-            <section class="content__page">
-                <h1 class="page__name">Felipe Moreno</h1>
-                <h2 class="page__job">Frontend developer</h2>
-            </section>
+            <article class="content__page content__about">
+                <header class="about__header">
+                    <h2 class="about__title">Sobre <span class="title__color">Mi</span></h2>
+                </header>
+                <section class="about__personal-info">
+                    <article class="personal-info__bio">
+                        <p class="personal-info__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatum minus, ratione, commodi animi omnis et unde quis sunt laboriosam reiciendis saepe! Eius minima alias porro sint harum. Consequatur, minima?
+                        </p>
+                    </article>
+                </section>
+                <section class="experience__knowledges">
+                    <header class="knowledges__subheader">
+                        <h2 class="experience__subtitle">
+                            Technical Skilss
+                        </h2>
+                    </header>
+                    <section class="knowledges__container">
+                        <ul class="knowledges__list">
+                            <li class="knowledges__option">JavaScript</li>
+                            <li class="knowledges__option">JavaScript</li>
+                            <li class="knowledges__option">JavaScript</li>
+                            <li class="knowledges__option">JavaScript</li>
+                            <li class="knowledges__option">JavaScript</li>
+                            <li class="knowledges__option">JavaScript</li>
+                            <li class="knowledges__option">JavaScript</li>
+                        </ul>
+                    </section>
+                </section>
+                <section class="experience__container">
+                    <section class="experience__left">
+                        <header class="experience__subheader">
+                            <h2 class="experience__subtitle">
+                                Experiencia
+                            </h2>
+                        </header>
+                        <div class="experience__timelines">
+                            <article class="timelines__timeline">
+                                <header class="timeline__header">
+                                    <h3 class="timeline__year">2010</h3>
+                                    <span class="timelinecompany">Indra</span>
+                                </header>
+
+                                <div class="timeline__divider"></div>
+
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">Desarrollador Frontend</h3>
+                                    <p class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Quis odit repellendus non debitis architecto, at voluptatum magnam adipisci?
+                                        Quia rerum omnis veniam eius culpa unde, error dolores vel obcaecati quod.
+                                    </p>
+                                </div>
+                            </article>  
+                            <article class="timelines__timeline">
+                                <header class="timeline__header">
+                                    <h3 class="timeline__year">2010</h3>
+                                    <span class="timelinecompany">Indra</span>
+                                </header>
+
+                                <div class="timeline__divider"></div>
+
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">Desarrollador Frontend</h3>
+                                    <p class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Quis odit repellendus non debitis architecto, at voluptatum magnam adipisci?
+                                        Quia rerum omnis veniam eius culpa unde, error dolores vel obcaecati quod.
+                                    </p>
+                                </div>
+                            </article>  
+                            <article class="timelines__timeline">
+                                <header class="timeline__header">
+                                    <h3 class="timeline__year">2010</h3>
+                                    <span class="timelinecompany">Indra</span>
+                                </header>
+
+                                <div class="timeline__divider timeline__divider--last"></div>
+
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">Desarrollador Frontend</h3>
+                                    <p class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Quis odit repellendus non debitis architecto, at voluptatum magnam adipisci?
+                                        Quia rerum omnis veniam eius culpa unde, error dolores vel obcaecati quod.
+                                    </p>
+                                </div>
+                            </article>  
+                        </div>
+                    </section>
+                </section>
+                <section class="experience__certificates">
+                    <header class="experience__subheader">
+                        <h2 class="experience__subtitle">
+                            Certificados
+                        </h2>
+                    </header>
+                    <section class="certificates__container">
+                        <article class="certificate__item">
+                            <div class="certificate__logo">
+                                <img class="certificate__image" src="./assets/img/certificado-1.png" alt="imagen">
+                            </div>
+                            <div class="certificate__content">
+                                <h4 class="certificate__title">Node.js certificado</h4>
+                                <span class="certificate__id">545345</span>
+                                <span class="certificate__date">23 de agosto de 2023</span>
+                            </div>
+                        </article>
+                        <article class="certificate__item">
+                            <div class="certificate__logo">
+                                <img class="certificate__image" src="./assets/img/certificado-1.png" alt="imagen">
+                            </div>
+                            <div class="certificate__content">
+                                <h4 class="certificate__title">Node.js certificado</h4>
+                                <span class="certificate__id">545345</span>
+                                <span class="certificate__date">23 de agosto de 2023</span>
+                            </div>
+                        </article>
+                        <article class="certificate__item">
+                            <div class="certificate__logo">
+                                <img class="certificate__image" src="./assets/img/certificado-1.png" alt="imagen">
+                            </div>
+                            <div class="certificate__content">
+                                <h4 class="certificate__title">Node.js certificado</h4>
+                                <span class="certificate__id">545345</span>
+                                <span class="certificate__date">23 de agosto de 2023</span>
+                            </div>
+                        </article>
+                    </section>
+                </section>
+            </article>
         </main>
     </div>
 </body>

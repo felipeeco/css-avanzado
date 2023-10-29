@@ -217,7 +217,7 @@ body {
     text-align: center;
     box-shadow: 0 0 3rem -05rem rgba(0, 0, 0, 0.15);
     width: 60%;
-    min-height: 23rem;
+    min-height: 13rem;
     border-radius: 5rem;
     display: flex;
     flex-direction: column;
@@ -284,7 +284,7 @@ body {
 .experience__header,
 .portfolio__header {
     display: inline-block;
-    margin-bottom: 4.5rem;
+    margin-bottom: 2rem;
 }
 
 .about__title,
@@ -314,9 +314,13 @@ body {
 /* personal information */
 .about__personal-info {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
-    margin-bottom: 5rem;
+    margin-bottom: 2.5rem;
+}
+
+.experience__knowledges {
+    margin-bottom: 2.5rem;
 }
 
 .personal-info__bio {
@@ -371,12 +375,20 @@ body {
 }
 
 /* laboral experience */
+.experience__container, .experience__certificates {
+    margin-bottom: 3.4rem;
+}
+
 .experience__container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     margin-bottom: 1.4rem;
 }
+
+.experience__subtitle {
+    margin-bottom: 1.5rem;
+} 
 
 .timelines__timeline {
     width: 100%;
@@ -424,10 +436,14 @@ body {
 .timeline__divider {
     background-color: var(--icon-color);
     bottom: -18px;
-    left: 7%;
+    left: 6rem;
     position: absolute;    
     top: 0;
     width: 1px;
+}
+
+.timeline__divider--last {
+    bottom: 0;
 }
 
 .timeline__divider::before {
@@ -489,7 +505,6 @@ body {
     align-items: center;
     background-color: var(--background-certificate-color);
     display: flex;
-    height: 100%;
     justify-content: center;
     padding: 2.5rem;
     width: 15rem;
