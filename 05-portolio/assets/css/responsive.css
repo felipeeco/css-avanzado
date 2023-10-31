@@ -1,7 +1,3 @@
-.layout__menu-toggle {
-    display: none;
-}
-
 @media (max-width: 1490px) {
     body {
         padding: 0;
@@ -31,7 +27,6 @@
     }
 
     .layout__menu-toggle {
-        display: none;
         position: absolute;
         background-color: var(--secondary-color);
         border-radius: 3rem;
@@ -39,11 +34,11 @@
         cursor: pointer;
         font-size: 2.5rem;
         line-height: 4.8rem;
-        right: 1rem;
+        transition: all 500ms ease-in-out;
         text-align: center;
         top: 1rem;
+        right: 1rem;
         width: 4.8rem;
-        transition: all 500ms ease-in-out;
     }
 
     .fa-xmark {
@@ -64,6 +59,17 @@
         overflow: auto;
         transition: all 300ms ease-in-out;
         z-index: 1;
+    }
+
+    .layout__aside--visible {
+        margin-right: 0;
+        opacity: 1;
+        width: 100%;
+    }
+
+    .layout__aside--hidden {
+        margin-right: -100%;
+        opacity: o;
     }
 
     .layout__menu {
@@ -159,6 +165,10 @@
         border-radius: 0;
         height: 100%;
     }
+
+    .layout__menu-toggle {
+        display: block;
+    } 
 
     .content__page {
         border-radius: 0;
