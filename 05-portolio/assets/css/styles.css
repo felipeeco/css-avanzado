@@ -16,7 +16,7 @@
 
 /* GENERAL STYLES */
 html {
-    font-size: 10px;
+    font-size: 62.5%;/* equal to 10px*/
 }
 
 body {
@@ -210,7 +210,7 @@ body {
     display: block;
     position: absolute;
     top: 0;
-    right: -105px;
+    right: -10.5rem;
     background-color: transparent;
     min-width: 11rem;
 }
@@ -439,7 +439,7 @@ body {
 
 .timeline__divider {
     background-color: var(--icon-color);
-    bottom: -18px;
+    bottom: -1.8rem;
     left: 6rem;
     position: absolute;    
     top: 0;
